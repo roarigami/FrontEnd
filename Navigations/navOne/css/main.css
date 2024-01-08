@@ -1,0 +1,27 @@
+/*********========
+Navigation Main Style
+==========********/
+
+.nav-container {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  transition: top 0.2s ease-in-out;
+   z-index: 1000!important;
+}
+
+nav {
+	 display: flex;
+   border: none;
+	 position: relative;
+   width: 100%;
+   background-color: #fff;
+   box-shadow: 2px 5px 4px rgba(0,0,0,0.1);
+}
+ nav .container {
+	 max-width: 1260px;
+	 width: 1260px;
+	 margin: auto;
+	 display: flex;
+   position: relative;
+}
