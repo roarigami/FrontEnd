@@ -9,6 +9,12 @@ body {
 li {
   list-style-type: none;
 }
+a {
+  text-decoration: none;
+}
+.push-right {
+  flex:1;
+}
 
 /*Nav scrollup*/
 header.header-up {
@@ -44,14 +50,14 @@ header.header-up {
 /*Upper Navigation*/
 .top-nav {
   position: relative;
-  display: block;
-  /* background: #f2f2f2; */
+  display: flex;
   background: linear-gradient(45deg, #fff 10%, #f0f0f0);
   height: 30px;
+  align-items: center;
 }
 .top-nav-box {
-  position: absolute;
-  right: 3.5em;
+  position: relative;
+  padding-right: 3em;
 }
 .top-nav-box a {
   margin-right: 10px;
@@ -261,13 +267,13 @@ width: 100%;
 .content .left-part .navMenu-submenu {
   margin: 8px 32px;
 }
-.content .left-part .navMenu-submenu .item {
+.content .left-part .navMenu-submenu .item a {
   color: #454545;
   font-size: 15px;
   margin: 8px auto;
   cursor: pointer;
 }
-.content .left-part .navMenu-submenu .item:hover {
+.content .left-part .navMenu-submenu .item a:hover {
   text-decoration: underline;
 }
 .content .left-part .navMenu-submenu .item.title {
