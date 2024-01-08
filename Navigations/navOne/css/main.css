@@ -56,3 +56,103 @@ nav {
  height: 25px;
  margin-right: 15px;
 }
+
+
+/*Navigation Menu*/
+.navMenu {
+  display: flex;
+  flex-direction: row;
+}
+.navMenuBox {
+ position: relative;
+ display: inline-block;
+ margin-left: 7.5%;
+ /* border: 1px solid #000; */
+}
+.navMenu .item {
+  /* color: #454545; */
+  color: #000;
+  display: flex;
+  /* padding: 24px; */
+  padding: 20px 15px 20px 15px;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: arial;
+  position: relative;
+}
+.navMenu .item .title-item {
+  display: flex;
+  position: relative;
+  user-select: none;
+}
+.navMenu .item .title-item:before, .navMenu .item .title-item:after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  margin: 5px 0 0;
+  transition: all 0.25s cubic-bezier(0.34, 0.37, 0.055, 1.56);
+  opacity: 1;
+  background-color: #454545;
+  left: 0;
+  /* bottom: -8px; */
+  bottom: -20px;
+}
+.navMenu .item .arrow {
+  font-size: 11px;
+  margin-left: 8px;
+  margin-top: 3px;
+}
+.navMenu .item:hover .title-item:before, .navMenu .item:hover .title-item:after {
+  width: 100%;
+  opacity: 1;
+}
+.menu.open:hover .navMenu .item .title-item:before, .menu.open:hover .navMenu .item .title-item:after{
+ width: 100%;
+ opacity: 1;
+}
+.contact-btn {
+ position: absolute;
+ border: none;
+ top: 7px;
+ right: 5%;
+ font-size: 14px;
+ font-weight: 500;
+ padding: 13px 20px 13px 20px;
+ cursor: pointer;
+ background-color: rgba(0,0,255, 1);
+ color: #fff;
+}
+.contact-btn:hover {
+ background-color: rgba(0,0,255, 0.3);
+}
+
+.menu {
+  position: absolute;
+  left: 50%;
+  opacity: 0;
+  /* height: 200px; */
+  height: 475px;
+  /* width: 1060px; */
+  width: 800px;
+  position: absolute;
+  /* top: 74px; */
+  top:87px;
+  padding: 0;
+  transform: perspective(1000px) translate3d(-50%, 0, 0);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.34, 0.37, 0.055, 1.56);
+  overflow: hidden;
+  visibility: hidden;
+}
+.menu.open {
+  opacity: 1;
+  transform: perspective(1000px) translate3d(-50%, 0, 0);
+  /* height: 275px; */
+  height: 400px;
+  /* max-width: 1160px;
+  width: 1160px; */
+  width: 700px;
+  visibility: visible;
+  z-index: 98;
+}
