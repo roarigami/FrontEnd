@@ -182,3 +182,112 @@ nav {
   visibility: visible;
   z-index: 98;
 }
+
+/*Menu Content*/
+.menu-content {
+    display: block;
+  background: #fff;
+  transition: 0.1s;
+  opacity: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding-top: 2em;
+}
+.menu-content li {
+  margin: 0;
+  padding: 0;
+}
+.menu-content li a {
+  color: #000;
+  font-size: 15px;
+}
+.menu-content .item.title {
+  font-weight: bolder;
+  color: #0b7756;
+  font-size: 15px;
+}
+.menu-content li a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  transition: 0.1s;
+  opacity: 1;
+  position: relative;
+  display: flex;
+  height: 100%;
+  font-family: arial;
+}
+.content .left-part, .content .right-part {
+  padding: 16px;
+  height: 100%;
+}
+.content .left-part {
+  background-color: #f2f4f6;
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+}
+.content .left-part .navMenu-submenu {
+  margin: 8px 32px;
+}
+.content .left-part .navMenu-submenu .item {
+  color: #454545;
+  font-size: 15px;
+  margin: 8px auto;
+  cursor: pointer;
+}
+.content .left-part .navMenu-submenu .item:hover {
+  text-decoration: underline;
+}
+.content .left-part .navMenu-submenu .item.title {
+  font-weight: bolder;
+  color: #0b7756;
+  font-size: 15px;
+}
+.content .right-part {
+  background-color: #fff;
+  flex: 2;
+  background-image: url(../assets/img/techbg.jpg);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  width: 300px;
+  margin: 16px auto;
+}
+.card p {
+  margin: auto auto 16px auto;
+  text-align: center;
+  color: #000;
+  font-family: arial;
+  font-size: 16px;
+  font-weight: 600;
+}
+.card button {
+  position: relative;
+  left: 25%;
+  top: 4em;
+  /* background-color: white; */
+  background: #0505ff;
+  border: none;
+  /* color: #0b7756; */
+  color: #fff;
+  max-width: 150px;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 10px;
+  cursor: pointer;
+}
+.card button:hover {
+  background: 	rgb(173,216,230);
+}
+
+
+#menu-1 .menu-content ul {
+  padding-left: 0;
+}
