@@ -6,6 +6,10 @@ body {
   min-height: 50em;
 }
 
+/*Nav scrollup*/
+header.header-up {
+  top: -30px!important;
+}
 
 /*Double Navigation Container*/
 .nav-container {
