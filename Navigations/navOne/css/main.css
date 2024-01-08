@@ -382,3 +382,16 @@ padding-left: 0;
 #menu-1 .menu-content ul {
   padding-left: 0;
 }
+#menu-3 .menu-content ul{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-column-gap: 0;
+grid-row-gap: 10px;
+padding-left: 0;
+}
+#menu-5 .menu-content ul {
+  padding-left : 0;
+}
+#menu-3 .menu-content, #menu-1 .menu-content, #menu-5 .menu-content {
+  padding-left: 2em;
+}
