@@ -19,6 +19,24 @@ header.header-up {
   transition: top 0.2s ease-in-out;
    z-index: 1000!important;
 }
+.nav-container h1 {
+  font-family: 'Arial black', sans-serif;
+  font-size: 100px;
+  position: absolute;
+  margin: auto 0;
+  color: white;
+  line-height: 90%;
+  text-transform: uppercase;
+  z-index: 1;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+  text-align: center;
+  font-weight: bolder;
+}
+
 /*Upper Navigation*/
 .top-nav {
   position: relative;
@@ -285,6 +303,43 @@ nav {
 }
 .card button:hover {
   background: 	rgb(173,216,230);
+}
+
+.menu-bottom {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  height: 100%;
+  border:1px solid rgba(0,0,0,0);
+  width: 100%;
+  background-image: url(../assets/img/techbg.jpg);
+}
+.menu-bottom button {
+  position: relative;
+  left: 5%;
+  top: 1em;
+  /* background-color: white; */
+  background: #0505ff;
+  border: none;
+  /* color: #0b7756; */
+  color: #fff;
+  max-width: 250px;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 10px;
+  cursor: pointer;
+}
+.menu-bottom p {
+  margin: 10px auto 10px 20px;
+  color: #000;
+  font-family: arial;
+  font-size: 16px;
+  font-weight: 700;
+}
+.menu-bottom img {
+  position: absolute;
+  right: 1em;
+  height: 150px;
 }
 
 
