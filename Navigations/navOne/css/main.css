@@ -6,6 +6,10 @@ body {
   min-height: 50em;
 }
 
+li {
+  list-style-type: none;
+}
+
 /*Nav scrollup*/
 header.header-up {
   top: -30px!important;
@@ -230,6 +234,12 @@ nav {
   text-decoration: underline;
 }
 
+.menu-inner {
+display: flex;
+flex-direction: row;
+width: 100%;
+}
+
 .content {
   transition: 0.1s;
   opacity: 1;
@@ -340,6 +350,26 @@ nav {
   position: absolute;
   right: 1em;
   height: 150px;
+}
+
+.mi-box {
+padding-left: 2em;
+}
+.mi-box ul {
+padding-left: 0;
+}
+.mi-box:first-child {
+  width:40%;
+  border-right: 1px solid #dedede;
+}
+.mi-box:last-child {
+  width:60%;
+}
+.mi-box:last-child ul{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 10px;
 }
 
 
