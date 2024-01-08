@@ -2,7 +2,7 @@
 NavOne JavaScript
 *******************/
 
-// Hide Header on on scroll down
+//Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
@@ -39,4 +39,41 @@ function hasScrolled() {
   }
 
   lastScrollTop = st;
+}
+
+
+
+
+
+/*Navigation Sub Menu Hover Dropdown Script*/
+document.addEventListener("DOMContentLoaded", function(event) {
+eventListener(hoverDrop);
+});
+
+ let hoverDrop = document.querySelectorAll(".hoverable");
+let element  = document.querySelectorAll(".menu");
+
+  function reveal(e, isEnter, state){
+  let menuCurrent = isEnter.dataset.menu;
+  let menState = state;
+  for(let i = 0; i < element.length; i++) {
+    if(menuCurrent === element[i].id && menState === true){
+      element[i].classList.add("open");
+    }
+    else element[i].classList.remove("open");
+  }
+  console.log(menState);
+}
+function eventListener(box) {
+  for(let i = 0, len = hoverDrop.length; i < len; i++){
+    hoverDrop[i].addEventListener("mouseenter", () => reveal(box, hoverDrop[i], true));
+    hoverDrop[i].addEventListener("mouseleave", () => reveal(box, hoverDrop[i], false));
+
+    for(let i = 0, len = element.length; i < len; i++) {
+      element[i].addEventListener("mouseenter", () => reveal(box, hoverDrop[i], true));
+      element[i].addEventListener("mouseleave", () => reveal(box, hoverDrop[i], false));
+    }
+
+  }
+  // console.log(box);
 }
