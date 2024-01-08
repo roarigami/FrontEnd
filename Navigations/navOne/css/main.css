@@ -251,6 +251,46 @@ nav {
   visibility: visible;
   z-index: 98;
 }
+@media (max-width: 1100px) {
+  .sidenav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s opacity;
+    z-index:100;
+  }
+    .sidenav__holder {
+      position: absolute;
+      width: 375px;
+      height: 100%;
+      background: #fff;
+      display: flex;
+      flex-flow: column wrap;
+      overflow: hidden;
+      transition: 0.2s transform;
+      right:0;
+      transform: translateX(400px);
+    }
+    .sidenav.is-open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .sidenav.is-open .sidenav__holder {
+      transform: translate(0)!important;
+    }
+
+}
+
+@media (max-width: 600px) {
+  .sidenav__holder {
+    max-width: 320px;
+  }
+}
 
 /*Menu Content*/
 .menu-content {

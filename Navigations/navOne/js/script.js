@@ -77,3 +77,25 @@ function eventListener(box) {
   }
   // console.log(box);
 }
+
+
+
+
+
+//Sidenav Script
+var $btnTrigger = $('.sidenav-trigger');
+var $sidenav = $('.sidenav');
+var $btnClosesidenav = $('.close-sidenav');
+
+$btnTrigger.on('click', function () {
+    $(this).toggleClass('is-open');
+    $sidenav.addClass('is-open');
+    document.body.style.overflowY = "hidden";
+});
+
+//sidenav
+$('.close-sidenav').on('click', function () {
+    $sidenav.removeClass('is-open');
+    $btnTrigger.removeClass('is-open');
+    document.body.style.overflowY = "auto";
+});
