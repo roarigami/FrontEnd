@@ -151,6 +151,9 @@ nav {
 }.sidenav-close {
   display:none;
 }
+.sidenav-menu {
+  display:none;
+}
 @media (max-width: 1100px) {
     .navMenuBox,
     .contact-btn {
@@ -197,7 +200,8 @@ nav {
   position: relative;
   user-select: none;
 }
-.navMenu .item .title-item:before, .navMenu .item .title-item:after {
+.navMenu .item .title-item:before,
+.navMenu .item .title-item:after {
   content: "";
   position: absolute;
   width: 0px;
@@ -215,11 +219,13 @@ nav {
   margin-left: 8px;
   margin-top: 3px;
 }
-.navMenu .item:hover .title-item:before, .navMenu .item:hover .title-item:after {
+.navMenu .item:hover .title-item:before,
+.navMenu .item:hover .title-item:after {
   width: 100%;
   opacity: 1;
 }
-.menu.open:hover .navMenu .item .title-item:before, .menu.open:hover .navMenu .item .title-item:after{
+.menu.open:hover .navMenu .item .title-item:before,
+.menu.open:hover .navMenu .item .title-item:after{
  width: 100%;
  opacity: 1;
 }
@@ -254,6 +260,8 @@ nav {
   z-index: 98;
 }
 @media (max-width: 1100px) {
+
+  /*Mobile Screen Side Navigation*/
   .sidenav {
     position: fixed;
     right: 0;
@@ -268,7 +276,7 @@ nav {
   }
     .sidenav__holder {
       position: absolute;
-      width: 375px;
+      width: 400px;
       height: 100%;
       background: #fff;
       display: flex;
@@ -294,7 +302,7 @@ nav {
     width: 30px;
     height: 30px;
     top: 7.5px;
-    right: 10px;
+    right: 25px;
     z-index: 3;
     border-radius:10px;
     cursor: pointer;
@@ -304,6 +312,66 @@ nav {
   .sidenav-close:hover {
     background-color: #f2f2f2;
   }
+
+  .sidenav-menu {
+    position:relative;
+    display:block;
+    width:100%;
+  }
+  .sidenav-menu ul{
+    position:relative;
+    margin-top:5em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sidenav-menu ul li {
+    position:relative;
+    display:flex;
+    flex-direction: row;
+    margin: 10px 0;
+  }
+  .sidenav-menu ul li a {
+    font-size: 16px;
+    font-family: arial;
+    height:100%;
+    width:90%;
+    padding:0.75em 0;
+    cursor: pointer;
+  }
+  .sidenav-menu ul li a span {
+    float:right;
+  }
+  .sidenav-menu ul li a i {
+    position:relative;
+    font-size:12px;
+    top:-1px;
+  }
+  .sidenav-menu ul li a:before,
+  .sidenav-menu ul li a:after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    transition: all 0.25s cubic-bezier(0.34, 0.37, 0.055, 1.56);
+    opacity: 1;
+    background-color: #454545;
+    left: 0;
+    /* bottom: -8px; */
+    bottom: -5px;
+    z-index:-1;
+  }
+  .sidenav-menu ul li a:hover:before,
+  .sidenav-menu ul li a:hover:after{
+   width: 90%;
+   opacity: 1;
+  }
+  /* .sidenav-menu ul li a:before,
+  .sidenav-menu ul li a:after {
+    width: 100%;
+    opacity: 1;
+  } */
 
 }
 
