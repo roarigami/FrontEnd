@@ -87,15 +87,27 @@ let $btnTrigger = $('.sidenav-trigger');
 let $sidenav = $('.sidenav');
 let $btnClosesidenav = $('.sidenav-close');
 
-$btnTrigger.on('click', function () {
-    $(this).toggleClass('is-open');
-    $sidenav.addClass('is-open');
-    document.body.style.overflowY = "hidden";
-});
-
-//sidenav
+  $btnTrigger.on('click', function () {
+      $(this).toggleClass('is-open');
+      $sidenav.addClass('is-open');
+      document.body.style.overflowY = "hidden";
+  });
   $btnClosesidenav.on('click', function () {
     $sidenav.removeClass('is-open');
     $btnTrigger.removeClass('is-open');
     document.body.style.overflowY = "auto";
+});
+
+
+
+//Sidenav Menu Script
+$('.menu-link').click(function(){
+	$('div.menu').removeClass('is-active');
+
+	if ($(this).data('ref')) {
+		let targetRef = $(this).data('ref');
+		let $target = $('div.menu[data-menu="' + targetRef + '"]');
+
+		$target.addClass('is-active');
+	}
 });
