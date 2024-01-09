@@ -3,10 +3,10 @@ NavOne JavaScript
 *******************/
 
 //Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
+let didScroll;
+let lastScrollTop = 0;
+let delta = 5;
+let navbarHeight = $('header').outerHeight();
 
 $(window).scroll(function(event) {
   didScroll = true;
@@ -20,7 +20,7 @@ setInterval(function() {
 }, 20);
 
 function hasScrolled() {
-  var st = $(this).scrollTop();
+  let st = $(this).scrollTop();
 
   // Make sure they scroll more than delta
   if (Math.abs(lastScrollTop - st) <= delta)
@@ -83,9 +83,9 @@ function eventListener(box) {
 
 
 //Sidenav Script
-var $btnTrigger = $('.sidenav-trigger');
-var $sidenav = $('.sidenav');
-var $btnClosesidenav = $('.close-sidenav');
+let $btnTrigger = $('.sidenav-trigger');
+let $sidenav = $('.sidenav');
+let $btnClosesidenav = $('.sidenav-close');
 
 $btnTrigger.on('click', function () {
     $(this).toggleClass('is-open');
@@ -94,7 +94,7 @@ $btnTrigger.on('click', function () {
 });
 
 //sidenav
-$('.close-sidenav').on('click', function () {
+  $btnClosesidenav.on('click', function () {
     $sidenav.removeClass('is-open');
     $btnTrigger.removeClass('is-open');
     document.body.style.overflowY = "auto";

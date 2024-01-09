@@ -148,6 +148,8 @@ nav {
 }
 .sidenav-trigger {
   display:none;
+}.sidenav-close {
+  display:none;
 }
 @media (max-width: 1100px) {
     .navMenuBox,
@@ -283,6 +285,25 @@ nav {
     .sidenav.is-open .sidenav__holder {
       transform: translate(0)!important;
     }
+
+    .sidenav-close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    top: 7.5px;
+    right: 10px;
+    z-index: 3;
+    border-radius:10px;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0);
+    transition: all 0.3s;
+  }
+  .sidenav-close:hover {
+    background-color: #f2f2f2;
+  }
 
 }
 
