@@ -154,6 +154,9 @@ nav {
 .sidenav-menu {
   display:none;
 }
+.contact-btn-mobile {
+  display:none;
+}
 button.menu-link {
   display:none;
 }
@@ -396,7 +399,7 @@ button.menu-link {
 			transition: transform .4s cubic-bezier(.23,1,.32,1),visibility 0s linear .4s;
 			visibility: hidden;
 			transform: translateX(400px);
-      border: 2px solid blue;
+      /* border: 2px solid blue; */
   }
   .menu-content {
     position:relative;
@@ -431,6 +434,24 @@ button.menu-link {
 	 top: 50%;
 	 margin-top: -7px;
 	 height: 14px;
+}
+
+
+.contact-btn-mobile {
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  top: 7px;
+  width:80%;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 auto;
+  padding: 13px 20px 13px 20px;
+  cursor: pointer;
+  background-color: rgba(0,0,255, 1);
+  color: #fff;
 }
 
 }
