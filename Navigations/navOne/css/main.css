@@ -286,7 +286,8 @@ button.menu-link {
   }
     .sidenav__holder {
       position: absolute;
-      width: 400px;
+      /* width: 400px; */
+      width:50%;
       height: 100%;
       background: #fff;
       display: flex;
@@ -388,7 +389,8 @@ button.menu-link {
   .menu {
       position: absolute;
       height:100%;
-      width:400px;
+      /* width:400px; */
+      width:100%;
 			left: 0;
 			right: 0;
 			bottom: 0;
@@ -398,7 +400,8 @@ button.menu-link {
 			z-index: 10!important;
 			transition: transform .4s cubic-bezier(.23,1,.32,1),visibility 0s linear .4s;
 			visibility: hidden;
-			transform: translateX(400px);
+			/* transform: translateX(400px); */
+      transform: translateX(100%);
       /* border: 2px solid blue; */
   }
   .menu-content {
