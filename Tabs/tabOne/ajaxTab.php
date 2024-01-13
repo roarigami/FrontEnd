@@ -48,6 +48,21 @@
 
 <div class="tabContainer">
 
+  <div id="loadScreen">
+  <div class="loadScreenLoad">
+    <!-- Loading Animation -->
+    <div class="spinner" id="spinnerLoad">
+         <div class="rect1"></div>
+         <div class="rect2"></div>
+         <div class="rect3"></div>
+         <div class="rect4"></div>
+         <div class="rect5"></div>
+       </div>
+     <!-- END OF LOAD ANIMATIONS -->
+    </div>
+</div>
+
+
 <div class="tabBox" id="tabOneBox">
 
 <h1>Tab One</h1>
