@@ -41,8 +41,8 @@
 
 <div class="tabNav">
   <ul>
-    <li><button class="tabBtn tabOneBtn tabActive" id="tabOneBtn">Tab One</button></li>
-    <li><button class="tabBtn tabTwoBtn" id="tabTwoBtn">Tab Two</button></li>
+    <li class="tabUnderline"><button class="tabBtn tabOneBtn tabActive" id="tabOneBtn">Tab One</button></li>
+    <li class=""><button class="tabBtn tabTwoBtn" id="tabTwoBtn">Tab Two</button></li>
   </ul>
 </div>
 

@@ -20,15 +20,20 @@ body {
   height: auto!important;
   margin-bottom: 1em;
   border: 1px solid rgba(0,0,0,0);
+  box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+  border-radius: 50px;
+  overflow:hidden;
+  background-color: #fff;
 }
 .tabNav ul {
   position: relative;
     display: flex;
     flex-direction: row;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 0;
+    margin: 0;
 }
 .tabNav ul li {
   position: relative;
@@ -41,7 +46,7 @@ body {
     color: rgba(0,0,0,0.5);
     border: none;
     background: transparent;
-    padding: 2em 1em;
+    padding: 2em 4em;
     border-bottom: 3px solid rgba(0,0,0,0);
     cursor: pointer;
     transition: 0.2s all;
@@ -50,6 +55,7 @@ body {
   color: #000;
   background:#f2f2f2;
 }
+
 .tabNav ul li button.tabActive:hover {
   background:#f2f2f2;
 }
