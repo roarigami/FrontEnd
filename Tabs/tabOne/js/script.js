@@ -8,6 +8,10 @@ $(document).ready(function(){
 
   tabOneBtn.click(function(e) {
 
+    e.preventDefault();
+      //disabled the button so user cannot click while loading
+      this.setAttribute("disabled", true);
+
         loadScreen.show();
         setTimeout(function(){
           tabOne();
@@ -47,7 +51,7 @@ $(document).ready(function(){
            data : {},
            success : function(data) {
              $('#tabOneBox').css("display" , "none");
-             $('#tabtwoBox').css("display" , "block");
+             $('#tabTwoBox').css("display" , "block");
              $('#tabTwoBox').append(data);
 
              tabTwoBtn.prop("disabled", false);
