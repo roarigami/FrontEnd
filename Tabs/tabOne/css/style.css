@@ -54,12 +54,12 @@ body {
   background:#f2f2f2;
 }
 .tabNav ul li button:hover {
-  color: #000;
+  color: rgba(0,0,0,0.8);
   background:#fafafa;
-  border-bottom: 3px solid rgba(128, 0, 128, 0.2);
+  border-bottom: 3px solid rgba(1, 1, 122, 0.2);
 }
 .tabActive {
-    border-bottom: 3px solid purple!important;
+    border-bottom: 3px solid navy!important;
 }
 
 .tabContainer {
