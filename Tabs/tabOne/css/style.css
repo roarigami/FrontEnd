@@ -1,14 +1,25 @@
 /*************
 Ajax Tabs CSS
 *************/
-
+body {
+  margin: 0;
+}
+.pageContent {
+  position:relative;
+    display:flex;
+    flex-direction: column;
+    width:65%;
+    min-height:50vh;
+    margin: 0 auto;
+    border: 1px solid rgba(0,0,0,0);
+}
 .tabNav {
   position: relative;
   display: flex;
   width: 100%;
   height: auto!important;
   margin-bottom: 1em;
-  border: 1px solid rgba(0,0,0,1);
+  border: 1px solid rgba(0,0,0,0);
 }
 .tabNav ul {
   position: relative;
@@ -35,19 +46,27 @@ Ajax Tabs CSS
     cursor: pointer;
     transition: 0.2s all;
 }
-.tabNav ul li button.lsActive {
+.tabNav ul li button.tabActive {
   color: #000;
+  background:#f2f2f2;
+}
+.tabNav ul li button.tabActive:hover {
+  background:#f2f2f2;
 }
 .tabNav ul li button:hover {
   color: #000;
-  background:#f2f2f2;
+  background:#fafafa;
   border-bottom: 3px solid rgba(128, 0, 128, 0.2);
+}
+.tabActive {
+    border-bottom: 3px solid purple!important;
 }
 
 .tabContainer {
-
-
-
+  position:relative;
+  width:100%;
+  /* min-height:80vh; */
+  border: 1px solid rgba(0,0,0,1);
 }
 
 .tabBox {
