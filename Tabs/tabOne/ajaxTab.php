@@ -48,7 +48,7 @@
 
 <div class="tabContainer">
 
-<div class="tabBox" id="tabOne">
+<div class="tabBox" id="tabOneBox">
 
 <h1>Tab One</h1>
 
@@ -61,20 +61,21 @@
 </div>
 
 
-<div class="tabBox" id="tabTwo" style="display:none;">
+<div class="tabBox" id="tabTwoBox" style="display:none;">
 
-
-</div>
 
 
 
 </div>
 
 
+
 </div>
 
 
-  <!-- Javascript file(s) at end of the page -->
+</div>
+
+
   <script src="js/script.js"></script>
 </body>
 
