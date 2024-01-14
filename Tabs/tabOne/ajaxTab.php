@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>tab One</title>
+<title>Tab One</title>
 <link rel = "icon" href=""/>
 
   <meta charset="utf-8">
