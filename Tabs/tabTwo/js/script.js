@@ -8,5 +8,5 @@ $( document ).ready(function() {
   let content = document.querySelectorAll('.tab-content');
 
 
-
+  
 });

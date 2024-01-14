@@ -5,6 +5,8 @@ Tab Two Styles
 .tab-nav {
 position:relative;
 display: flex;
+width:80%;
+margin: 0 auto;
 }
 .tab-nav ul {
   list-style: none;
@@ -44,10 +46,20 @@ justify-content: center;
 }
 
 .tab-container {
-
+position: relative;
+display:block;
+width:80%;
+margin: 0 auto;
+border: 1px solid rgba(0,0,0,1);
+min-height: 60vh;
 }
 
 .tab-content {
-
-
+  position:relative;
+  display: none;
+  height:100%;
+  width:100%;
+  animation: fadeIn 0.15s linear;
+  border: 1px solid rgba(0,0,0,0);
+  padding-top: 1em!important;
 }
