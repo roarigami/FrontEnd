@@ -1,3 +1,53 @@
 /**************
 Tab Two Styles
 **************/
+
+.tab-nav {
+position:relative;
+display: flex;
+}
+.tab-nav ul {
+  list-style: none;
+  padding: 0;
+  padding-left: 20px;
+  font-size: 0;
+display: flex;
+margin-bottom: 0;
+width: 100%;
+justify-content: center;
+}
+.tab-nav ul li {
+  text-align: center;
+  display: inline-block;
+}
+.tab-nav ul li button {
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #ececec;
+  color: #797979;
+  /* height: 3rem; */
+  padding: 20px;
+  outline: 0;
+  font-size: 1.45rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.12s;
+  width: 100%;
+  border-bottom: 3px solid rgba(0,0,0,0);
+}
+.tab-nav ul li button:hover {
+    border-bottom: 3px solid rgba(0,0,0,0);
+    background: #f2f2f2;
+    color: #1976d2;
+    position: relative;
+}
+
+.tab-container {
+
+}
+
+.tab-content {
+
+
+}
