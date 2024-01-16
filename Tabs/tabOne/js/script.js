@@ -55,9 +55,6 @@ function tabActive(tabCurrent) {
         });
       break;
 
-      case 2:
-      break;
-
     }
 
 
