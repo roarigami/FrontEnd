@@ -22,9 +22,37 @@ function tabActive(tabCurrent) {
 
     switch(tabCurrent) {
       case 0:
+      $.ajax({
+          method : "POST",
+          url : "tabOneBox.php",
+          data : {},
+          success : function(data) {
+            tabBtn[tabCurrent].classList.add('tabActive');
+            tabBox[tabCurrent].style.display = block;
+            $('#tabOneBox').append(data);
+            loadScreen.hide();
+          },
+          error: function (){
+            alert("Something went wrong!");
+          }
+        });
       break;
 
       case 1:
+      $.ajax({
+          method : "POST",
+          url : "tabTwoBox.php",
+          data : {},
+          success : function(data) {
+            tabBtn[tabCurrent].classList.add('tabActive');
+            tabBox[tabCurrent].style.display = block;
+            $('#tabTwoBox').append(data);
+            loadScreen.hide();
+          },
+          error: function (){
+            alert("Something went wrong!");
+          }
+        });
       break;
 
       case 2:
@@ -41,7 +69,10 @@ function tabActive(tabCurrent) {
 function removeActive() {
   tabContentContainer = document.querySelectorAll('.tabContentContainer');
   for(let i = 0; i < tabBtn.length; i++) {
-    
+      tabBtn[i].classList.remove('tabActive');
+      tabBtn[i].disabled = false;
+      tabBox[i].style.display = none;
+      tabContentContainer[0].remove();
   }
 }
 
