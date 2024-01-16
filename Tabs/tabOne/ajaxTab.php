@@ -32,9 +32,13 @@
 
 <body>
 
-    <style>
-
-    </style>
+<!--
+The benefit of the ajax tab is that there will only ever be
+one tab content in the DOM at a time. This reduces page size as opposed to display: none
+which simply removes the element from the view and layout but the element is still
+in the DOM occupying the same amount of memory.
+Usefulness increases with the number of tabs.
+-->
 
 <!-- Page Content -->
 <div class="pageContent">
