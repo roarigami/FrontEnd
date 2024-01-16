@@ -2,48 +2,37 @@
 NavOne JavaScript
 *******************/
 
-//Hide Header on on scroll down
-let didScroll;
+//Hide .top-nav on on scroll down
+let scrolled;
 let lastScrollTop = 0;
 let delta = 5;
-let navbarHeight = $('header').outerHeight();
+let navHeight = $('.nav-container').outerHeight();
 
 $(window).scroll(function(event) {
-  didScroll = true;
+  scrolled = true;
 });
 
 setInterval(function() {
-  if (didScroll) {
+  if (scrolled) {
     hasScrolled();
-    didScroll = false;
+    scrolled = false;
   }
 }, 20);
 
 function hasScrolled() {
   let st = $(this).scrollTop();
 
-  // Make sure they scroll more than delta
   if (Math.abs(lastScrollTop - st) <= delta)
     return;
 
-  // If they scrolled down and are past the navbar, add class .nav-up.
-  // This is necessary so you never see what is "behind" the navbar.
-  if (st > lastScrollTop && st > navbarHeight) {
-    // Scroll Down
+  if (st > lastScrollTop && st > navHeight) {
     $('header').removeClass('header-down').addClass('header-up');
-  } else {
-    // Scroll Up
-    if (st + $(window).height() < $(document).height()) {
+    } else if (st + $(window).height() < $(document).height()) {
       $('header').removeClass('header-up').addClass('header-down');
     }
-  }
 
   lastScrollTop = st;
 }
-
-
-
-
 
 /*Navigation Sub Menu Hover Dropdown Script*/
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -78,10 +67,6 @@ function eventListener(box) {
   // console.log(box);
 }
 
-
-
-
-
 //Sidenav Script
 let $btnTrigger = $('.sidenav-trigger');
 let $sidenav = $('.sidenav');
@@ -97,8 +82,6 @@ let $btnClosesidenav = $('.sidenav-close');
     $btnTrigger.removeClass('is-open');
     document.body.style.overflowY = "auto";
 });
-
-
 
 //Sidenav Menu Script
 $('.menu-link').click(function(){

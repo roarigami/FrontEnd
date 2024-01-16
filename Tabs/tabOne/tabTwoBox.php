@@ -3,7 +3,7 @@
 
 
 echo '
-<div class="tabTwoContainer" id="tabTwoContainer">
+<div class="tabContentContainer" id="tabTwoContainer">
 ';
 
 echo '
