@@ -5,21 +5,44 @@ $(document).ready(function(){
   let none = "none";
   let block = "block";
   const loadScreen = $('#loadScreen');
-  let tabOneContainer;
+  let tabContentContainer;
   let tabBtn = document.querySelectorAll('.tabBtn');
-  let tabContent = document.querySelectorAll('.tabContentContainer');
+  let tabBox = document.querySelectorAll('.tabBox');
 
   for (let i = 0; i < tabBtn.length; i++) {
   tabBtn[i].addEventListener('click', () => tabActive(i));
 }
 
 function tabActive(tabCurrent) {
+  removeActive();
+  tabBtn[tabCurrent].setAttribute("disabled", true);
+  loadScreen.show();
+
+  setTimeout(function(){
+
+    switch(tabCurrent) {
+      case 0:
+      break;
+
+      case 1:
+      break;
+
+      case 2:
+      break;
+
+    }
+
+
+  },500);
+
 
 }
 
 function removeActive() {
-
-
+  tabContentContainer = document.querySelectorAll('.tabContentContainer');
+  for(let i = 0; i < tabBtn.length; i++) {
+    
+  }
 }
 
 
