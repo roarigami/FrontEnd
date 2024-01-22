@@ -20,10 +20,11 @@ a {
 
 .page-container {
   position:relative;
-  height:100vh;
-  display: grid;
-  grid-template-rows: minmax(min-content, 100vh);
-  grid-template-columns: repeat(2, 50vw);
+  width:100%;
+  min-height:100vh;
+  display: flex;
+  /* grid-template-rows: minmax(min-content, 100vh);
+  grid-template-columns: repeat(2, 50vw); */
 }
 
 .signup-container,
@@ -34,21 +35,110 @@ a {
 }
 
 .signup-container {
-    width: 100vw;
-    padding: 10rem 10rem;
+    height:100%;
+    width:60%;
+    padding: 6rem 6rem;
     align-items: flex-start;
     justify-content: flex-start;
     grid-column: 1 / 2;
     grid-row: 1;
+    border: 1px solid red;
+}
+
+.signup-form {
+  max-width: 40rem;
+  width: 100%;
+}
+.text-light {
+  color: #696969;
+}
+.header-primary {
+  font-size: 3rem;
+}
+.input-text {
+  font-family: inherit;
+  font-size: 1.8rem;
+  padding: 3rem 5rem 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  background: #eee;
+  font-weight: 600;
+  width: 100%;
+}
+.input-text:focus {
+  outline-color: #2196f3;
+}
+
+.btn {
+  padding: 2rem 3rem;
+  border: none;
+  background: #2196f3;
+  color: #fff;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: inherit;
+}
+.btn-signup {
+  align-self: flex-end;
+  width: 100%;
+  margin-top: 2rem;
+  box-shadow: 0 1rem 2rem #00000025;
+}
+.btn-signup:active {
+  box-shadow: none;
+}
+.btn-signup:hover {
+  background: #2180f9;
+}
+.input {
+  position: relative;
+}
+.label {
+  pointer-events: none;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: #00000070;
+  font-weight: 500;
+  font-size: 1.8rem;
+
+  transition: all 0.2s;
+  transform-origin: left;
+}
+.input-text:not(:placeholder-shown) + .label,
+.input-text:focus + .label {
+  top: 0.7rem;
+  transform: scale(0.75);
+}
+.input-text:focus + .label {
+  color: #2196f3;
+}
+.flex-row {
+  display: flex;
+  gap: 2rem;
+}
+.input-icon {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: #00000070;
+}
+.input-icon-password {
+  cursor: pointer;
 }
 
 .greeting-container {
+  width:40%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: flex-start;
   padding: 10rem;
   grid-column: 2 / 3;
   grid-row: 1;
   background: #eeeeee75;
+  border: 1px solid blue;
 }
