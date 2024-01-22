@@ -6,6 +6,17 @@ Login One Style
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+a {
+  color: #50B8E9;
+  text-decoration: none;
+}
+.custom-dot {
+  color: #50B8E9;
+}
 
 .page-container {
   position:relative;
