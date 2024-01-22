@@ -37,12 +37,12 @@ a {
 .signup-container {
     height:100%;
     width:60%;
-    padding: 6rem 6rem;
+    padding: 8rem 8rem;
     align-items: flex-start;
     justify-content: flex-start;
     grid-column: 1 / 2;
     grid-row: 1;
-    border: 1px solid red;
+    border: 1px solid rgba(0,0,0,0);
 }
 
 .signup-form {
@@ -57,10 +57,10 @@ a {
 }
 .input-text {
   font-family: inherit;
-  font-size: 1.8rem;
-  padding: 3rem 5rem 1rem 2rem;
+  font-size: 1rem;
+  padding: 2rem 5rem 1rem 2rem;
   border: none;
-  border-radius: 2rem;
+  border-radius: 1rem;
   background: #eee;
   font-weight: 600;
   width: 100%;
@@ -98,12 +98,11 @@ a {
 .label {
   pointer-events: none;
   position: absolute;
-  top: 2rem;
+  top: 1.5rem;
   left: 2rem;
   color: #00000070;
   font-weight: 500;
-  font-size: 1.8rem;
-
+  font-size: 1.4rem;
   transition: all 0.2s;
   transform-origin: left;
 }
@@ -121,7 +120,7 @@ a {
 }
 .input-icon {
   position: absolute;
-  top: 2rem;
+  top: 1.2rem;
   right: 2rem;
   font-size: 2rem;
   color: #00000070;
@@ -140,5 +139,5 @@ a {
   grid-column: 2 / 3;
   grid-row: 1;
   background: #eeeeee75;
-  border: 1px solid blue;
+  border: 1px solid rgba(0,0,0,0);
 }
