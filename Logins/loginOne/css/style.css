@@ -1,3 +1,43 @@
 /**************
 Login One Style
 ***************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-container {
+  position:relative;
+  height:100vh;
+  display: grid;
+  grid-template-rows: minmax(min-content, 100vh);
+  grid-template-columns: repeat(2, 50vw);
+}
+
+.signup-container,
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.signup-container {
+    width: 100vw;
+    padding: 10rem 10rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.greeting-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10rem;
+  grid-column: 2 / 3;
+  grid-row: 1;
+  background: #eeeeee75;
+}
